@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom style */
+
+.page1::before{
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: -5%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #8243EA;
+    filter: blur(500px);
+}
+
+.page1::after{
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #3e108a;
+    filter: blur(500px);
+}
+
+#started::before, #contact::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: white;
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.75s;
+    z-index: -1;
+}
+
+
+#started:hover::before, #contact:hover:before{
+    clip-path: circle(100% at 50% 50%);
+}
+
+#contact::before{
+    background: #3e108a;
+    filter: blur(2px);
+}
