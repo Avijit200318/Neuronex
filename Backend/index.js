@@ -24,7 +24,7 @@ app.use("/api/auth", authRouter);
 
 app.use(express.static(path.join(__dirname, '/Frontend/dist')));
 
-app.get('*', (req, res) => {
+app.get(/^\/(?!api|static).*$/, (req, res) => {
     res.sendFile(path.join(__dirname, 'Frontend', 'dist', 'index.html'));
 });
 
