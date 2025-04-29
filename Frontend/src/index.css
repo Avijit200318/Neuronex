@@ -4,7 +4,7 @@
 
 /* custom style */
 
-.page1::before{
+#page1::before{
     content: '';
     position: absolute;
     bottom: -10%;
@@ -12,11 +12,11 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    background: #8243EA;
+    background: #8665e4;
     filter: blur(500px);
 }
 
-.page1::after{
+#page1::after{
     content: '';
     position: absolute;
     top: 10%;
@@ -24,8 +24,8 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    background: #3e108a;
-    filter: blur(500px);
+    background: #8665e4;
+    filter: blur(90px) !important;
 }
 
 #started::before, #contact::before{

@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 export default function Home() {
     return (
         <div>
-            <div className="page1 bg-[#0B021C] w-full h-screen text-white overflow-hidden relative">
+            <div id='page1' className="bg-[#0B021C] w-full h-screen text-white overflow-hidden relative">
                 <Navbar />
                 <div className="main h-[calc(100vh-5rem)] flex">
                     <div className="left w-[60%] px-16 py-8 flex flex-col justify-center items-start gap-4">
